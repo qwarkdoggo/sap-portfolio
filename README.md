@@ -8,7 +8,7 @@
 - `Dockerfile` — file for containerization (optional)
 - `app.zip` — archive of the project
 
-## Local Setup
+Local Setup
 
 1. Create a virtual environment:
 ```powershell
