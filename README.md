@@ -10,7 +10,7 @@
 
 ## Local Setup
 
-1. Create a virtual environment:
+Create a virtual environment:
 ```powershell
 python -m venv .venv
 
@@ -19,16 +19,16 @@ Activate the environment:
 .venv\Scripts\activate
 
 
-2. Install dependencies:
+Install dependencies:
 
 pip install -r requirements.txt
 
 
-3. Run the server:
+Run the server:
 
 uvicorn app.main:app --reload
 
-4. Example Request
+Example Request
 curl http://127.0.0.1:8000/
 
 
@@ -50,17 +50,17 @@ class Item(BaseModel):
     price: float
 
 
-6. Example POST endpoint in app/main.py:
+Example POST endpoint in app/main.py:
 
 @app.post("/items/")
 def create_item(item: Item):
     return {"item_name": item.name, "item_price": item.price}
 
-7. Docker (Optional)
+Docker (Optional)
 docker build -t sap-api .
 docker run -p 8000:8000 sap-api
 
-## About Azure Deployment
+About Azure Deployment
 
 I attempted to deploy this project to Azure Container Apps directly from source code without Docker.
 
