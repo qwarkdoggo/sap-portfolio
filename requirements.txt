@@ -1,0 +1,6 @@
+css
+
+fastapi
+uvicorn[standart]
+pydantic
+python-dotenv
